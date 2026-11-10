@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentina Makeup - Tienda de maquillaje</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Encabezado con logo y menu -->
+  <header>
+    <img class="logo" src="img/logo.jpg" alt="Logo de Valentina Makeup">
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#quienes-somos">Quienes somos</a>
+      <a href="#catalogo">Catalogo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="carrito-icono">Carrito 🛒 <span id="contador">0</span></div>
+  </header>
+
+  <!-- Banner principal -->
+  <section class="banner" id="inicio">
+    <h1>Valentina Makeup</h1>
+    <p>Maquillaje, belleza y cuidado personal de calidad a precios accesibles.</p>
+    <a class="boton" href="#catalogo">Ver catalogo</a>
+  </section>
+
+  <!-- Quienes somos -->
+  <section id="quienes-somos">
+    <h2>Quienes somos</h2>
+    <p>Valentina Makeup comercializa maquillaje, belleza y cuidado personal de calidad, variedad y precios accesibles, con marcas como Majikal, Bloomshell, Atenea, Prosa y Miss Wink. Ofrece atencion personalizada, asesoria, promociones y ventas por redes sociales, buscando crecer y destacarse por la confianza y satisfaccion del cliente.</p>
+  </section>
+
+  <!-- Catalogo de productos -->
+  <section id="catalogo">
+    <h2>Catalogo</h2>
+    <div class="grid-productos" id="lista-productos"></div>
+  </section>
+
+  <!-- Carrito de compras -->
+  <section id="carrito">
+    <h2>Tu carrito</h2>
+    <div id="lista-carrito"></div>
+    <p class="total">Total: <span id="total">$0</span></p>
+    <button class="btn-pedido" onclick="hacerPedido()">Hacer pedido por WhatsApp</button>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Escribenos por WhatsApp para hacer tu pedido o resolver tus dudas.</p>
+    <p>Tambien nos encuentras en nuestras redes sociales.</p>
+    <br>
+    <a class="boton" href="#carrito">Ir al carrito</a>
+  </section>
+
+  <!-- Pie de pagina -->
+  <footer>
+    <p>Valentina Makeup - Proyecto escolar</p>
+    <p>Creditos de imagenes: fotografias de los productos suministradas por Valentina Makeup de su catalogo. Marcas mencionadas: Got2b, Atenea, Prosa, Majikal, Bloomshell, Miss Wink, Girly y Alma Beauty.</p>
+  </footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
